@@ -1,0 +1,12 @@
+{% if weekly_task %}
+    {% for task in weekly_task %}
+        <ol>
+            <li>
+                <h2 style=" margin-top:20px;">&nbsp;{{ task.goal }}</h2><br>
+                <p style="margin-left:10px;">task.description</p>
+            </li>
+        </ol>
+    {% endfor %}
+{% else %}
+    <h2>No Weekly Task</h2>
+{% endif %}

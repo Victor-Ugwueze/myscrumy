@@ -1,0 +1,8 @@
+{% if scrummy_goal %}
+    {% for task in scrummy_goal %}
+        <h2 style=" margin-top:20px;">&nbsp;{{ task.goal }}</h2><br>
+        <p style="margin-left:10px;">{{ task.description }}</p>
+    {% endfor %}
+{% else %}
+    <h2>No Task found</h2>
+{% endif %}
